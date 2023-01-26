@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+:root {
+       --fontmedieval: 'MedievalSharp', cursive;
+}
 
 * {
     padding: 0px;
@@ -15,23 +19,25 @@ body {
 /******************************************************************************/
 header h1 {
     text-align: center;
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: white;
+    font-family: var(--fontmedieval);
     font-weight: bold;
     font-size: 5em;
 }
 /******************************************************************************/
 nav {
-    background-color: rgb(169, 169, 175);
+    background-color: rgb(26, 26, 160);
     padding: 10px 10px;
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.486);
+    
 }
 nav ul li {
     display: inline-block;
     color: black;
 }
 nav ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -60,4 +66,28 @@ main p {
     text-indent: 20px;
     text-align: center;
     padding-right: 10px;
+    font-size: 3em;
+}
+main p#imagem {
+    background-image: url(../img/imgtext.jpg);
+    color: white;
+    background-size: cover;
+    background-position: left center;
+    display: block;
+}
+/*******************************************************************************/
+footer {
+       background-color: red;
+       color: white;
+}
+footer p {
+    text-align: center;
+}
+footer p  a {
+    color: white;
+    font-weight: bold;
+}
+footer p a:hover {
+    text-decoration: underline;
+    background-color: blue;
 }
